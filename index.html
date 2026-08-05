@@ -1,1 +1,226 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chanchería Firpo | Tortuguitas</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8ed;
+      color: #3b2518;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #e85d04;
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    nav {
+      background: #6b3e26;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 14px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .principal {
+      padding: 65px 20px;
+      text-align: center;
+      background: linear-gradient(#fff8ed, #f4dfc2);
+    }
+
+    .principal h2 {
+      color: #e85d04;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .principal p {
+      font-size: 20px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #e85d04;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #e85d04;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .producto {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    }
+
+    .producto h3 {
+      color: #6b3e26;
+      margin-bottom: 8px;
+    }
+
+    .contacto {
+      background: #f4dfc2;
+      max-width: none;
+      text-align: center;
+    }
+
+    .contacto p {
+      margin: 9px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #6b3e26;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .principal h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>CHANCHERÍA FIRPO</h1>
+    <p>Carne de cerdo fresca y de calidad</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="principal" id="inicio">
+      <h2>Del campo a tu mesa</h2>
+
+      <p>
+        Venta directa de cortes de cerdo, lechón, cordero
+        y elaboraciones artesanales en Tortuguitas.
+      </p>
+
+      <a class="boton" href="https://www.instagram.com/chancheriafirpo/">
+        Ver nuestras ofertas
+      </a>
+    </div>
+
+    <section id="productos">
+      <h2>Nuestros productos</h2>
+
+      <div class="productos">
+        <div class="producto">
+          <h3>Cortes de cerdo</h3>
+          <p>Productos frescos y variedad de cortes.</p>
+        </div>
+
+        <div class="producto">
+          <h3>Lechón</h3>
+          <p>Lechón fresco entero, en mitades o trozado.</p>
+        </div>
+
+        <div class="producto">
+          <h3>Cordero</h3>
+          <p>Cordero entero, mitades y cortes seleccionados.</p>
+        </div>
+
+        <div class="producto">
+          <h3>Elaboraciones</h3>
+          <p>Hamburguesas, rebozadas, chorizos y salamines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Chanchería Firpo</h2>
+
+      <p style="text-align:center; font-size:18px;">
+        Somos un negocio familiar de Tortuguitas dedicado a ofrecer
+        carne de cerdo fresca, productos seleccionados y atención personalizada.
+      </p>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Encontranos</h2>
+
+      <p><strong>📍 Moreno y Araucarias, Tortuguitas</strong></p>
+      <p><strong>📞 11 2162-5489</strong></p>
+      <p><strong>Instagram: @chancheriafirpo</strong></p>
+
+      <a class="boton" href="https://wa.me/541121625489">
+        Consultanos por WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Chanchería Firpo · Tortuguitas</p>
+  </footer>
+
+</body>
+</html>
