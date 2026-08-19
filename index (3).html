@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chanchería Firpo | Tortuguitas</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8ed;
+      color: #3b2518;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #e85d04;
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    nav {
+      background: #6b3e26;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 14px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .principal {
+      padding: 65px 20px;
+      text-align: center;
+      background: linear-gradient(#fff8ed, #f4dfc2);
+    }
+
+    .principal h2 {
+      color: #e85d04;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .principal p {
+      font-size: 20px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #e85d04;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #e85d04;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .producto {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    }
+
+    .producto h3 {
+      color: #6b3e26;
+      margin-bottom: 8px;
+    }
+
+    .contacto {
+      background: #f4dfc2;
+      max-width: none;
+      text-align: center;
+    }
+
+    .contacto p {
+      margin: 9px 0;
+      font-size: 18px;
+    }
+
+    .lechon-sabados {
+      max-width: none;
+      padding: 55px 20px;
+      background: #17100c;
+      text-align: center;
+    }
+
+    .lechon-sabados-contenido {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .lechon-sabados img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.35);
+    }
+
+    .lechon-sabados .boton {
+      background: #25d366;
+      color: #102217;
+      font-size: 18px;
+      box-shadow: 0 5px 14px rgba(0,0,0,.25);
+    }
+
+    footer {
+      background: #6b3e26;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .principal h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+   <img src="logo%20chancheria%20.webp" alt="Logo de Chanchería Firpo" style="width:120px; height:120px; object-fit:contain; border-radius:50%; margin-bottom:10px;">
+    <h1>CHANCHERÍA FIRPO</h1>
+    <p>Carne de cerdo fresca y de calidad</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#lechon-sabados">Lechón los sábados</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="principal" id="inicio">
+      <h2>Del campo a tu mesa</h2>
+
+      <p>
+        Venta directa de cortes de cerdo, lechón, cordero
+        y elaboraciones artesanales en Tortuguitas.
+      </p>
+
+      <a class="boton" href="https://www.instagram.com/chancheriafirpo/">
+        Ver nuestras ofertas
+      </a>
+    </div>
+
+    <section class="lechon-sabados" id="lechon-sabados">
+      <div class="lechon-sabados-contenido">
+        <img src="lechon-sabados.png" alt="Todos los sábados, lechón a la estaca en Chanchería Firpo">
+
+        <a class="boton" href="https://wa.me/541121625489?text=Hola%2C%20quiero%20reservar%20lech%C3%B3n%20para%20el%20s%C3%A1bado" target="_blank" rel="noopener noreferrer">
+          Reservá tu porción por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section id="cuenta-dni" style="padding:45px 20px; background:linear-gradient(135deg,#00b8e6,#0879c9); text-align:center;">
+  <div style="max-width:800px; margin:auto; background:white; border-radius:24px; padding:30px 20px; box-shadow:0 8px 25px rgba(0,0,0,.20);">
+
+    <div style="display:flex; justify-content:center; align-items:center; gap:15px; margin-bottom:18px;">
+      
+      <div style="width:75px; height:75px; border-radius:20px; background:linear-gradient(145deg,#13c5e8,#0875c5); color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:22px; box-shadow:0 5px 12px rgba(0,119,190,.35);">
+        DNI
+      </div>
+
+      <div style="text-align:left;">
+        <div style="font-size:34px; font-weight:bold; color:#0875c5;">
+          Cuenta DNI
+        </div>
+        <div style="font-size:15px; color:#555;">
+          Banco Provincia
+        </div>
+      </div>
+
+    </div>
+
+    <h2 style="font-size:30px; color:#e85d04; margin:10px 0;">
+      ¡Trabajamos con Cuenta DNI!
+    </h2>
+
+    <p style="font-size:21px; color:#173b67; margin:12px 0; font-weight:bold;">
+      Aprovechá los beneficios y reintegros vigentes
+    </p>
+
+    <p style="font-size:16px; color:#555; margin:10px 0 0;">
+      Pagá con Cuenta DNI en Chanchería Firpo.
+    </p>
+
+  </div>
+</section>
+    <section id="productos">
+      <h2>Nuestros productos</h2>
+
+      <div class="productos">
+        <div class="producto">
+          <h3>Cortes de cerdo</h3>
+          <section id="productos">
+  <h2>🔥 ¡Ofertas de la semana!</h2>
+
+  <p style="text-align:center; margin-bottom:25px;">
+    Ofertas abonando en efectivo o transferencia.
+  </p>
+
+  <div class="productos">
+   <div class="producto">
+  <h3>Osobuco y codillo</h3>
+  <p><strong>2 kg – $9.999</strong></p>
+</div>
+    <div class="producto">
+      <h3>Rebozadas de cerdo</h3>
+      <p><strong>2 kg — $12.999</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Hamburguesas puro cerdo</h3>
+      <p><strong>2 kg — $14.999</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Paleta parrillera</h3>
+      <p><strong>2 kg — $11.999</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Carré en bifes</h3>
+      <p><strong>2 kg — $14.999</strong></p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:50px;">🐷 Productos frescos</h2>
+
+  <div class="productos">
+    <div class="producto">
+      <h3>Pechito de cerdo</h3>
+      <p><strong>$8.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Carré de cerdo</h3>
+      <p><strong>$8.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Solomillo</h3>
+      <p><strong>$10.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Matambrito de cerdo</h3>
+      <p><strong>$12.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Bondiola por pieza</h3>
+      <p><strong>$10.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Pulpa para milanesas</h3>
+      <p><strong>$11.999 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Patitas, huesitos y cueritos</h3>
+      <p><strong>$4.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Cabezas enteras</h3>
+      <p><strong>$6.999 cada una</strong></p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:50px;">⭐ Productos especiales</h2>
+
+  <div class="productos">
+    <div class="producto">
+      <h3>Cordero entero o mitad</h3>
+      <p><strong>$12.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Piezas de cordero</h3>
+      <p>Aproximadamente 2,5 kg</p>
+      <p><strong>$14.499 por kg</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Salamín artesanal de la casa</h3>
+      <p><strong>$10.000 cada uno</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Chorizo colorado</h3>
+      <p><strong>$4.999 cada uno</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Quesos de campo saborizados</h3>
+      <p><strong>$11.999 cada uno</strong></p>
+    </div>
+
+    <div class="producto">
+      <h3>Panceta salada</h3>
+      <p><strong>100 g — $6.499</strong></p>
+    </div>
+  </div>
+</section>
+
+    <section id="nosotros">
+      <h2>Sobre Chanchería Firpo</h2>
+
+      <p style="text-align:center; font-size:18px;">
+        Somos un negocio familiar de Tortuguitas dedicado a ofrecer
+        carne de cerdo fresca, productos seleccionados y atención personalizada.
+      </p>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Encontranos</h2>
+
+      <p><strong>📍 Moreno y Araucarias, Tortuguitas</strong></p>
+      <p><strong>📞 11 2162-5489</strong></p>
+      <p><strong>Instagram: @chancheriafirpo</strong></p>
+      <p><strong>Facebook: <a href="https://www.facebook.com/profile.php?id=61560929152468" target="_blank">Chanchería Firpo</a></strong></p>
+
+      <a class="boton" href="https://wa.me/541121625489">
+        Consultanos por WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Chanchería Firpo · Tortuguitas</p>
+  </footer>
+
+</body>
+</html>
