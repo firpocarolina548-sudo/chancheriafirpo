@@ -244,125 +244,262 @@
 
   </div>
 </section>
-    <section id="productos">
-      <h2>Nuestros productos</h2>
+  <style>
+  #lista-precios-firpo {
+    background: #fff8ef;
+    padding: 55px 20px;
+    color: #26130d;
+    font-family: Arial, sans-serif;
+  }
 
-      <div class="productos">
-        <div class="producto">
-          <h3>Cortes de cerdo</h3>
-          <section id="productos">
-  <h2>🔥 ¡Ofertas de la semana!</h2>
+  #lista-precios-firpo * {
+    box-sizing: border-box;
+  }
 
-  <p style="text-align:center; margin-bottom:25px;">
-    Ofertas abonando en efectivo o transferencia.
-  </p>
+  .precios-contenedor {
+    max-width: 1100px;
+    margin: auto;
+  }
 
-  <div class="productos">
-   <div class="producto">
-  <h3>Osobuco y codillo</h3>
-  <p><strong>2 kg – $9.999</strong></p>
-</div>
-    <div class="producto">
-      <h3>Rebozadas de cerdo</h3>
-      <p><strong>2 kg — $12.999</strong></p>
+  .precios-titulo {
+    margin-bottom: 35px;
+  }
+
+  .precios-titulo small {
+    color: #f26a21;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .precios-titulo h2 {
+    margin: 8px 0;
+    font-family: Georgia, serif;
+    font-size: 48px;
+  }
+
+  .precios-titulo p {
+    color: #765f55;
+  }
+
+  .precios-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .precios-grupo {
+    background: white;
+    border-top: 5px solid #f26a21;
+    padding: 22px;
+    margin-bottom: 22px;
+  }
+
+  .precios-grupo h3 {
+    margin: 0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 28px;
+  }
+
+  .precio-fila {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    align-items: center;
+    padding: 14px 0;
+    border-top: 1px solid #ecd8c8;
+  }
+
+  .precio-producto {
+    font-weight: bold;
+  }
+
+  .precio-producto small {
+    display: block;
+    margin-top: 5px;
+    color: #765f55;
+    font-weight: normal;
+  }
+
+  .precio-valor {
+    color: #f26a21;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .precio-valor small {
+    color: #765f55;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  @media (max-width: 700px) {
+    .precios-doble {
+      grid-template-columns: 1fr;
+    }
+
+    .precios-titulo h2 {
+      font-size: 38px;
+    }
+
+    .precio-valor {
+      font-size: 20px;
+    }
+  }
+</style>
+
+<section id="lista-precios-firpo">
+  <div class="precios-contenedor">
+
+    <div class="precios-titulo">
+      <small>PRECIOS ACTUALIZADOS</small>
+      <h2>Lista de precios</h2>
+      <p>Carne fresca, cortes seleccionados y especialidades de Chanchería Firpo.</p>
     </div>
 
-    <div class="producto">
-      <h3>Hamburguesas puro cerdo</h3>
-      <p><strong>2 kg — $14.999</strong></p>
+    <div class="precios-doble">
+
+      <div class="precios-grupo">
+        <h3>Cordero</h3>
+
+        <div class="precio-fila">
+          <div class="precio-producto">Cordero entero</div>
+          <div class="precio-valor">$15.999 <small>x kg</small></div>
+        </div>
+
+        <div class="precio-fila">
+          <div class="precio-producto">
+            Gigot de cordero
+            <small>Cuartos traseros</small>
+          </div>
+          <div class="precio-valor">$18.000 <small>x kg</small></div>
+        </div>
+      </div>
+
+      <div class="precios-grupo">
+        <h3>Lechón</h3>
+
+        <div class="precio-fila">
+          <div class="precio-producto">
+            Lechón fresco
+            <small>Entero o mitad</small>
+          </div>
+          <div class="precio-valor">$14.500 <small>x kg</small></div>
+        </div>
+
+        <div class="precio-fila">
+          <div class="precio-producto">
+            Lechón cocinado
+            <small>Entero o mitad</small>
+          </div>
+          <div class="precio-valor">$28.000 <small>x kg</small></div>
+        </div>
+
+        <div class="precio-fila">
+          <div class="precio-producto">
+            Lechón cocinado
+            <small>En cuartos</small>
+          </div>
+          <div class="precio-valor">$32.000 <small>x kg</small></div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="producto">
-      <h3>Paleta parrillera</h3>
-      <p><strong>2 kg — $11.999</strong></p>
-    </div>
+    <div class="precios-grupo">
+      <h3>Cerdo</h3>
 
-    <div class="producto">
-      <h3>Carré en bifes</h3>
-      <p><strong>2 kg — $14.999</strong></p>
-    </div>
-  </div>
+      <div class="precio-fila">
+        <div class="precio-producto">
+          Pechito
+          <small>Pieza entera: $8.200 x kg</small>
+        </div>
+        <div class="precio-valor">$8.800 <small>x kg</small></div>
+      </div>
 
-  <h2 style="margin-top:50px;">🐷 Productos frescos</h2>
+      <div class="precio-fila">
+        <div class="precio-producto">Carré</div>
+        <div class="precio-valor">$8.800 <small>x kg</small></div>
+      </div>
 
-  <div class="productos">
-    <div class="producto">
-      <h3>Pechito de cerdo</h3>
-      <p><strong>$8.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">
+          Bondiola
+          <small>Por pieza: $9.800 x kg</small>
+        </div>
+        <div class="precio-valor">$10.000 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Carré de cerdo</h3>
-      <p><strong>$8.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Matambre</div>
+        <div class="precio-valor">$13.500 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Solomillo</h3>
-      <p><strong>$10.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Jamón por pieza</div>
+        <div class="precio-valor">$6.800 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Matambrito de cerdo</h3>
-      <p><strong>$12.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Paleta por pieza</div>
+        <div class="precio-valor">$6.200 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Bondiola por pieza</h3>
-      <p><strong>$10.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Pulpa — cuadrada y nalga</div>
+        <div class="precio-valor">$12.000 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Pulpa para milanesas</h3>
-      <p><strong>$11.999 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Pulpa — resto de cortes</div>
+        <div class="precio-valor">$10.500 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Patitas, huesitos y cueritos</h3>
-      <p><strong>$4.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Solomillo</div>
+        <div class="precio-valor">$10.500 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Cabezas enteras</h3>
-      <p><strong>$6.999 cada una</strong></p>
-    </div>
-  </div>
+      <div class="precio-fila">
+        <div class="precio-producto">
+          Chorizo
+          <small>Por gancho: $7.500 x kg</small>
+        </div>
+        <div class="precio-valor">$8.800 <small>x kg</small></div>
+      </div>
 
-  <h2 style="margin-top:50px;">⭐ Productos especiales</h2>
+      <div class="precio-fila">
+        <div class="precio-producto">Cabezas enteras</div>
+        <div class="precio-valor">$8.000 <small>c/u</small></div>
+      </div>
 
-  <div class="productos">
-    <div class="producto">
-      <h3>Cordero entero o mitad</h3>
-      <p><strong>$12.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Osobuco y codillo</div>
+        <div class="precio-valor">$5.000 <small>x kg</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Piezas de cordero</h3>
-      <p>Aproximadamente 2,5 kg</p>
-      <p><strong>$14.499 por kg</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Salamines</div>
+        <div class="precio-valor">$8.000 <small>c/u</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Salamín artesanal de la casa</h3>
-      <p><strong>$10.000 cada uno</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Chorizo colorado</div>
+        <div class="precio-valor">$4.999 <small>c/u</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Chorizo colorado</h3>
-      <p><strong>$4.999 cada uno</strong></p>
-    </div>
+      <div class="precio-fila">
+        <div class="precio-producto">Panceta salada</div>
+        <div class="precio-valor">$6.500 <small>x 100 g</small></div>
+      </div>
 
-    <div class="producto">
-      <h3>Quesos de campo saborizados</h3>
-      <p><strong>$11.999 cada uno</strong></p>
-    </div>
-
-    <div class="producto">
-      <h3>Panceta salada</h3>
-      <p><strong>100 g — $6.499</strong></p>
     </div>
   </div>
 </section>
-
     <section id="nosotros">
       <h2>Sobre Chanchería Firpo</h2>
 
